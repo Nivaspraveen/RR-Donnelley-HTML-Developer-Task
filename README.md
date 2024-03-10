@@ -4,7 +4,7 @@
 This project aims to convert a provided layout image  into HTML/CSS without using any frameworks such as Bootstrap or W3CSS. The layout includes a slider functionality and zoom functionality for images, following specific design guidelines.
 
 **GIVEN INSTRUCTIONS:**
-1. **HTML Conversion:** Convert the provided layout image to HTML/CSS.
+1. **HTML Conversion:** Convert the provided layout image (layout.jpg) to HTML/CSS.
 2. **Container Size:** Maintain a maximum container size of 1152px X 720px, with vertical center alignment.
 3. **Slider Functionality:** Implement slider functionality without using any plugin.
 4. **Zoom Functionality:** Enable zoom functionality for images. By default, images should be in a normal state. On click, active images should zoom smoothly.
