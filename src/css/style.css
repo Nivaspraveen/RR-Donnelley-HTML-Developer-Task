@@ -1,0 +1,167 @@
+/* COLORS USED: #231f20, #b2b1b1, #878787  */
+
+/* ***************** GENERAL STYLES *************** */
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Varta", sans-serif;
+}
+
+/* ***************** CONTAINER *************** */
+
+.container {
+  max-width: 1152px;
+  max-height: 720px;
+  margin: 0 auto;
+  background-image: url("../assets/bg-cover.png");
+  background-size: cover;
+  position: relative;
+}
+
+/* ***************** HEADER CONTENT STYLES *************** */
+
+.header {
+  padding-top: 1.25rem; /* 20px */
+  height: 10.625rem; /* 170px */
+}
+
+.content-heading {
+  font-size: 1.25rem;
+  font-weight: 500;
+  color: #878787;
+  padding: 1rem 1.25rem; /* 16px 20px */
+  border-left: 10px solid #231f20;
+  margin-top: 12px;
+}
+
+.content-description {
+  font-weight: 500;
+  font-style: italic;
+  color: #878787;
+  padding: 1.875rem 0 0 1.875rem; /* 30px 0 0 30px */
+}
+
+/* ***************** ICON STYLES *************** */
+
+.icon {
+  color: #231f20;
+  cursor: pointer;
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  top: 50%;
+  border-radius: 50%;
+  transition: all 0.2s ease-in;
+}
+
+.icon-left#scroll-left {
+  left: 0;
+  display: none;
+}
+
+.icon-right#scroll-right {
+  right: 0;
+}
+
+.icon:hover {
+  background-color: #dee2e6;
+}
+
+/* ***************** WHEEL LIST STYLE *************** */
+
+.wheel-wrapper .wheel-list {
+  display: grid;
+  align-items: flex-start;
+  grid-template-columns: repeat(6, 1fr);
+  padding-top: 5.3125rem; /* 85px */
+  overflow: hidden;
+  height: 34.375rem; /* 550px */
+  scrollbar-width: none;
+  transition: transform 0.5s ease-in;
+  list-style: none;
+}
+
+/* ***************** WHEEL LIST ITEM STYLES *************** */
+
+.wheel-wrapper .wheel-items {
+  width: 17.5rem; /* 280px */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  cursor: pointer;
+  padding: 1.25rem; /* 20px */
+  text-align: center;
+  transition: transform 0.5s ease-in;
+  border: 2px solid transparent;
+  margin: 0 3.125rem; /* 0 50px */
+}
+
+/* ***************** WHEEL IMAGE STYLES *************** */
+
+.wheel-img {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.wheel-img img {
+  width: 12.5rem; /* 200px */
+  height: 12.5rem; /* 200px */
+  transition: transform 0.5s ease-in;
+}
+
+/* ***************** WHEEL IMAGE & ITEMS ACTIVE STYLES *************** */
+
+.wheel-wrapper .wheel-items.active {
+  -ms-transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+  background-image: url(../assets/wheel-bg.jpg);
+  border: 2px solid #b2b1b1;
+  padding-top: 1.25rem; /* 20px */
+}
+
+.active .wheel-img img {
+  -ms-transform: scale(1.1) rotate(90deg);
+  -webkit-transform: scale(1.1) rotate(90deg);
+  transform: scale(1.1) rotate(90deg);
+}
+
+/* ***************** WHEEL INFO STYLES *************** */
+.wheel-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 12px;
+  margin-top: 1.25rem; /* 20px */
+}
+
+.wheel-info.active {
+  font-size: small;
+}
+
+.wheel-info .wheel-heading {
+  text-transform: uppercase;
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+.wheel-info .wheel-text {
+  font-size: 14px;
+  font-weight: 500;
+  margin-bottom: 10px;
+  color: #878787;
+}
+
+.wheel-info .wheel-name {
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: bold;
+}
